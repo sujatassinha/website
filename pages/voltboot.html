@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>Jubayer's personal website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="../assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="../assets/css/owl.css" />
+    <link rel="stylesheet" href="../assets/css/lightbox.css" />
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="../assets/images/jubayer.png" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Jubayer Mahmod</h4>
+              <span> jubayer@vt.edu   </span>
+
+              <br> Gilbert place
+
+               <br>  220 Gilbert street, Level 4, room #4305
+
+                 <br>Blacksburg, VA 2060
+
+            </div>
+
+
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://twitter.com/jubayer0175"><img src="../assets/img/Twitter_Bird.png"></a>
+                </li>
+                <li>
+                  <a href="https://scholar.google.com/citations?user=VAryC0sAAAAJ&hl=en&inst=13410158990364976897"><img src="../assets/img/icons8-google-scholar-480.png" alt="google scholar"></a>
+                </li>
+                <li>
+                  <a href="https://github.com/jubayer0175"><img src="../assets/img/Octocat.png"></a>
+                </li>
+
+                <li>
+                  <a href="./assets/docs/resume.pdf" download> <img src="../assets/images/cv.png">  </a>
+                </li>
+                <!-- <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li> -->
+              </ul>
+            </div>
+
+
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li> <a href="../index.html#voltboot">Home </a></li>
+
+              </ul>
+            </nav>
+
+            
+          </div>
+        </div>
+      </div>
+
+
+      <section class="section projects" data-section="Top">
+        <div class="container">
+          <div class="section-heading">
+            <h4>SRAM Has No Chill: Exploiting Power Domain Separation to Steal On-Chip Secrets</h4>
+          </div>
+
+          <h4 style="text-decoration: underline;">Key Highlights</h4>
+
+          <h5 style="color: rgb(186, 207, 207);">High-level problem addressed</h5>
+          <p>The paper exposes a vulnerability of on-chip volatile memories that stems from the electrical separations, common in modern system-on-chip power distribution networks. 
+            It highlights the risks of physical memory disclosure attacks on embedded systems and smart devices.</p>
+          
+          <h5 style="color: rgb(186, 207, 207);">Main contribution</h5>
+          <p>The paper introduces "Volt Boot," an attack that showcases a vulnerability in on-chip volatile memories. This attack leverages on-chip power gating mechanisms to force SRAM data retention across power cycles, eliminating the need for traditional cold boot attack enablers on on-chip SRAM.</p>
+          
+          <h5 style="color: rgb(186, 207, 207);">Results</h5>
+          <p>We showed the effectiveness of the Volt Boot attack in caches, registers, and iRAMs of several Cortex-A profile processors. Notably, the attack retrieves data with 100% accuracy from the previous computational state, without requiring complex post-processing.</p>
+          
+          <h5 style="color: rgb(186, 207, 207);">Significance and industrial relevance</h5>
+          <p>The findings challenge the traditional belief that SRAM protects against cold boot attacks and underscore the need for robust security measures even in fully on-chip computations. With the proliferation of embedded devices in various sectors, understanding such vulnerabilities is crucial. This research provides valuable insights for industries aiming to bolster the security of their systems such that one cannot execute cold boot-style attacks on on-chip SRAM.</p>
+          
+          <h5 style="color: rgb(186, 207, 207);">Acquired technical skills</h5>
+          <p>Expertise in SoC subsystem power distribution, low-level firmware modification, cache coherency protocols, system initialization procedures, and debugging techniques such as JTAG and ARM SWD.</p>
+          
+        </section>
+
+
+
+      
+
+
+
+
+
+
+
+      <section class="section Top" data-section="section_end">
+        <div class="container">
+          <div class="section-heading">
+            <div class="inline-header">
+              <h2>
+                <div class="white-button">
+                  <a href="./invisible_bits.html">Next</a>
+                </div>
+              </h2>
+            </div>
+          </div>
+        
+
+      </section>
+
+
+
+
+
+    </div> 
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>

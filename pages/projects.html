@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>Jubayer's personal website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="../assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="../assets/css/owl.css" />
+    <link rel="stylesheet" href="../assets/css/lightbox.css" />
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="../assets/images/jubayer.png" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Jubayer Mahmod</h4>
+              <span> jubayer@vt.edu   </span>
+
+              <br> Blacksburg Corporate Research Center
+
+               <br>  2202 Kraft Drive, Level 2
+
+                 <br>Blacksburg, VA 2060
+              
+            </div>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://twitter.com/jubayer0175"><img src="../assets/img/Twitter_Bird.png"></a>
+                </li>
+                <li>
+                  <a href="https://scholar.google.com/citations?user=VAryC0sAAAAJ&hl=en&inst=13410158990364976897"><img src="../assets/img/icons8-google-scholar-480.png" alt="google scholar"></a>
+                </li>
+                <li>
+                  <a href="https://github.com/jubayer0175"><img src="../assets/img/Octocat.png"></a>
+                </li>
+
+                <li>
+                  <a href="./assets/docs/resume.pdf" download> <img src="../assets/images/cv.png">  </a>
+                </li>
+                <!-- <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li> -->
+              </ul>
+            </div>
+
+
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="../index.html">Home</a></li>
+
+              </ul>
+            </nav>
+
+            
+          </div>
+        </div>
+      </div>
+
+
+      <section class="section my-education" data-section="Top">
+        <div class="container">
+          <div class="section-heading">
+            <h4>Great Ideas are usually simple. They are usually simple equations, simple statements or both. I try to navigate through intricate technical details and see if I understand simple 'Aha moment' in a paper. 
+                I add papers in this as a remainder to myself.</h4>
+            <div class="line-dec"></div>
+          </div>
+
+          <ol>
+
+            <li> 
+                "<b>Understanding Vmin Failures for Improved Testing of Timing Marginalities</b>" ITC'22.
+               <br>  <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: Investigates the run time failures due to Vmin-induced soft errors that go undetected during typical tests.
+               <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: This paper says that most Vmin errors actually caused by one weak transistor in a path!
+            </li>  
+        
+        
+            <li> 
+                "<b>SecSoC: A Secure System on Chip Architecture for IoT Device</b>" HOST'22.
+               <br>  <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: Adding compile-and run-time security support to a program through a custom and tightly coupled co-processor.
+               <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: The idea seems to be a very (very) expensive solution to a problem that already has a production level and awesome solution. 
+               Think about TrustZone-M with a crypto-engine, which should tackle IoT security breach easily (not nothing is perfect I know!) or at least provide a similar security guarantee as this paper.
+               I wish the authors had included a little more discussion on SecSoc vs. TrustZone-M.
+            </li>  
+        
+        
+            <li> 
+                "<b>Abetting Planned Obsolescence by Aging 3D Networks-on-Chip</b>" NOC'18.
+               <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: Stress the TSV's in 3D SoC's NoC to induce runtime failure after a certain period to create a planned obsolescence scenario.
+               <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: I find this threat model is a little funny. Why OEMs (e.g. Apple) need to design a shrewd attack to 
+               destroy their closed-sourced device? they can just implant some timing-based delay insertion blocks that can be activated with software (hey they have all the access in the world.) 
+            </li>   
+        
+            <li> 
+                "<b>PISTIS: Trusted Computing Architecture for Low-end Embedded Systems.</b>" Security'22.
+               <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: Virtualize memory protection in embedded MUCs and replace unsafe brances (call *r1) with safe ones and verify that at compile time.
+               <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: Feels like they tried to make an ARM-TZ in software (with compile time support). Boy the overhead is huge! 
+            </li>   
+        
+        
+            <li> 
+                 "<b>Oâ€™Clock: Lock the Clock via Clock-gating for SoC IP Protection.</b>" DAC'22.
+                <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: Make the internal clock signals a function of a key so that in the absence of correct key clock network 
+                becomes non-functional.
+                <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: If an attacker has access to a working chip and reversed net list, why can't he/she figure out the no-clock signal? 
+                </li>   
+        
+        <li> <b> A Robust Authentication Methodology Using Physically Unclonable Functions in DRAM Arrays </b>
+        
+         <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%"> If we look at the access time failure of a DRAM array, we should be able to design a signture out of it. This true beacuse manufacturing vartiation should 
+        introduce inter-cell access time variability. </li>
+        
+        
+        <li> 
+            Colp, Patrick, et al. "<b>Protecting data on smartphones and tablets from memory attacks." </b> Proceedings of the Twentieth International Conference on Architectural Support for Programming Languages and Operating Systems. 2015.
+         <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: Put sensitive code and data in the on-chip RAMs (e.g. iRAMs or Caches) to protect cold boot
+         <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: Great paper. I am about to break it though.
+        </li>
+        
+        
+        <li> 
+        Luo, Lan, et al. "<b>On runtime software security of trustZone-m based iot devices.</b>" arXiv preprint arXiv:2007.05876 (2020).
+        <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: You lock everything but the door itself has a security problem so you can break-in. 
+        <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: The assumption that the door has a problem is already exploding my brain with a question: why are you exploring the property of a lock if door already has a bug? 
+        </li>
+        
+        
+        <li> 
+            Karageorgos, Ioannis, et al. <b>"Chip-to-Chip Authentication Method Based on SRAM PUF and Public Key Cryptography.</b>" Journal of Hardware and Systems Security 3.4 (2019): 382-396..
+        <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: we can split an SoC into two to protect the usual attacks and apply PUF to authenticate untrusted portion.
+         <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: I have to read more on split-chip to fully appreciate the solution.  
+        </li>
+        
+        
+        
+        <li>
+            P. Poudel, B. Ray and A. Milenkovic, "<b> Flashmark: Watermarking of NOR Flash Memories for Counterfeit Detection,</b>" 2020 57th ACM/IEEE Design Automation Conference (DAC), San Francisco, CA, USA, 2020, pp. 1-6, doi: 10.1109/DAC18072.2020.9218521.
+            <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: Utilize flash memory cell's aging to make a watermark
+            <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: This is actually an application of flash memory-based steganography system by Dr. Suh.
+        </li>
+        
+        
+        <li>
+            J. McMahan, W. Cui, L. Xia, J. Heckey, F. T. Chong and T. Sherwood, "<b>Challenging on-chip SRAM security with boot-state statistics,</b>" 2017 IEEE International Symposium on Hardware Oriented Security and Trust (HOST), McLean, VA, 2017, pp. 101-105, doi: 10.1109/HST.2017.7951806.
+            <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: SRAM wear burns in data in the boot statistics that we can use to break on-chip crypto
+        <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">:   Wish they used a little more recent and practical devices to evalute the performace. 
+        
+        </li>
+        
+        
+        <li>
+            Provelengios, George, Daniel Holcomb, and Russell Tessier. "<b>Characterizing power distribution attacks in multi-user FPGA environments.</b>" 2019 29th International Conference on Field Programmable Logic and Applications (FPL). IEEE, 2019. 
+            <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">:  Exessive power consumption in one part of a partially configured FPGA can inject power glitches in another part to create timing failures in other parts.
+            <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: Oh man! this is great threat fro shared FPGAs.
+        </li>
+        
+        
+        <li>
+            Zuck, Aviad, et al. "<b>Stash in a Flash.</b>" 16th {USENIX} Conference on File and Storage Technologies ({FAST} 18). 2018. 
+            Idea: Just define your own voltage level to hide information beyond what voltage is defined by the vendor
+            Remark: The throughput and capacity is really high!
+        </li>
+        
+        
+        
+        
+        <li>
+            Wang, Xinmu, et al. "Talukder, B. M. S., et al. "<b>Towards the Avoidance of Counterfeit Memory: Identifying the DRAM Origin.</b>" arXiv preprint arXiv:1911.03395 (2019)." 2011 IEEE 29th International Conference on Computer Design (ICCD). IEEE, 2011. 
+            <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: DRAM timing violation depends on the manufacturer and its intrinsic properties. 
+            <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: The article is technically sound but why can't we burn the manufacturer ID to verify the source of DRAM?
+        </li>
+        
+        
+        <li>
+            Yushi Cheng, Xiaoyu Ji, Juchuan Zhang, Wenyuan Xu, and Yi-Chao Chen. 2019. <b>DeMiCPU: Device Fingerprinting with Magnetic Signals Radiated by CPU</b>. In Proceedings of the 2019 ACM SIGSAC Conference on Computer and Communications Security (CCS '19). Association for Computing Machinery, New York, NY, USA, 1149â€“1170. DOI:https://doi.org/10.1145/3319535.3339810 
+            <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: CPU and power supply emits magnetic signals when current flows through the wire so look at that you have a device fingerprint. 
+            <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">:I am surprised by the simplicity of the idea.
+        </li>
+        
+        
+        <li>
+            Jeffrey Hicks, et al. "<b>45nm Transistor Reliability</b>" Intel Technology Journal, Volume 12, Issue 2, 2008 .
+            <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">:  Authors tried to address some of the reliability issues of 45nm Node.
+            <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: NBTI effect described here clearly indicated the progressive aging effect on threshold voltage and trans-conductance. 
+        </li>
+        
+        
+        <li>
+            Liu, Muqing, et al. "<b>A data remanence based approach to generate 100% stable keys from an sram physical unclonable function.</b>" 2017 IEEE/ACM International Symposium on Low Power Electronics and Design (ISLPED). IEEE, 2017.
+            <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: Just look at the cells who fails first when you power down the SRAM and those cells are the strongly biased to the flipped value.
+            <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: Very good work if we consider this for key generation. 
+        </li>
+        
+        
+        <li>
+            Liu, Muqing, et al. <b> "A data remanence based approach to generate 100% stable keys from an sram physical unclonable function.</b>" 2017 IEEE/ACM International Symposium on Low Power Electronics and Design (ISLPED). IEEE, 2017.
+            <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">:  Just look at the cells who fails first when you power down the SRAM and those cells are the strongly biased to the flipped value.
+            <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: Very good work if we consider this for key generation. 
+        </li>
+        
+        <li>
+            Guin, Ujjwal, et al. "<b>Detecting Recycled SoCs by Exploiting Aging Induced Biases in Memory Cells.</b>" 2019 IEEE International Symposium on Hardware Oriented Security and Trust (HOST). IEEE, 2019.
+            <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: Most data are biased towards 0s so it's going to age the cells in a way that makes it more likely to power-up as 1s.   
+            <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: A simple observation with a powerful implication-> no SRAM PUF is viable for very long time. This work is from my past lab, and I really think its great work. Bravo-> Wendong 
+        </li>
+        
+        
+        
+        <li>
+            Holcomb, Daniel E., Wayne P. Burleson, and Kevin Fu. <b>"Power-up SRAM state as an identifying fingerprint and source of true random numbers.</b>" IEEE Transactions on Computers 58.9 (2008): 1198-1210.
+            <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: Use SRAM power up states to generate ID and Random numbers.   
+            <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: Probably this the pioneer work on SRAM based fingerprinting and TRNG generation.
+        </li>
+        
+        
+        
+        <li>
+            BRUCE C. BERNDT. "<b>HOW TO WRITE MATHEMATICAL PAPERS "https://faculty.math.illinois.edu/~berndt/writingmath.pdf.  </b>
+            <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: Describes some interesting aspects of typical writers and provides feedback in a real satirical way.  
+            <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">: "...How long did it take you to develop this proof? You cannot expect readers to come
+            to the same reasoning in a much shorter period of time without being aided along the way."  
+        
+        </li>
+        
+        <li>
+        Ghosh, Pallabi, and Rajat Subhra Chakraborty. <b>"Counterfeit IC detection by image texture analysis.</b>" 2017 Euromicro conference on digital system design (DSD). IEEE, 2017. 
+        <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: A method to detect a counterfeit IC by comparing the texture and indents of an original package to other test ICs with 100% in detection accuracy.  
+        <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">:This method  uses no expensive hardware support except digital camera-sounds cool!.  
+        </li>
+        
+        <li>
+            Chen, Shuai, et al. "<b>Chip-level anti-reverse engineering using transformable interconnects."</b> 2015 IEEE International Symposium on Defect and Fault Tolerance in VLSI and Nanotechnology Systems (DFTS). IEEE, 2015. 
+            <br>   <img src="../assets/img/lamp.png" alt="idea icon" style="width:4%">: Use Vertical interconnect Access (via) that can change and become indistinguishable from the passive layer of an IC so that an adversary cannot extract the netlist by reverse engineering. 
+            <br>  <img src="../assets/img/comment.png" alt="comment" style="width:4%">:I agree that the proposed method has strong reasoning to be secure against reverse engineering when the circuit is large. 
+            
+        </li>
+        
+        
+        </ol>
+        
+        
+
+          
+      </section>
+
+
+
+      
+
+
+
+
+
+
+
+      <section class="section Top" data-section="section_end">
+        <div class="container">
+          <div class="section-heading">
+            <h2>          <div class="white-button">
+                <a href="#Top">Top</a>
+             </div></h2>
+            <div class="line-dec"></div>
+          </div>
+        
+
+      </section>
+
+
+
+
+
+    </div> 
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>

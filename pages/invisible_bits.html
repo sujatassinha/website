@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900"
+      rel="stylesheet"
+    />
+
+    <title>Jubayer's personal website</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="../assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="../assets/css/templatemo-style.css" />
+    <link rel="stylesheet" href="../assets/css/owl.css" />
+    <link rel="stylesheet" href="../assets/css/lightbox.css" />
+  </head>
+
+  <body>
+    <div id="page-wraper">
+      <!-- Sidebar Menu -->
+      <div class="responsive-nav">
+        <i class="fa fa-bars" id="menu-toggle"></i>
+        <div id="menu" class="menu">
+          <i class="fa fa-times" id="menu-close"></i>
+          <div class="container">
+            <div class="image">
+              <a href="#"><img src="../assets/images/jubayer.png" alt="" /></a>
+            </div>
+            <div class="author-content">
+              <h4>Jubayer Mahmod</h4>
+              <span> jubayer@vt.edu   </span>
+
+              <br> Gilbert place
+
+               <br>  220 Gilbert street, Level 4, room #4305
+
+                 <br>Blacksburg, VA 2060
+              
+            </div>
+            <div class="social-network">
+              <ul class="soial-icons">
+                <li>
+                  <a href="https://twitter.com/jubayer0175"><img src="../assets/img/Twitter_Bird.png"></a>
+                </li>
+                <li>
+                  <a href="https://scholar.google.com/citations?user=VAryC0sAAAAJ&hl=en&inst=13410158990364976897"><img src="../assets/img/icons8-google-scholar-480.png" alt="google scholar"></a>
+                </li>
+                <li>
+                  <a href="https://github.com/jubayer0175"><img src="../assets/img/Octocat.png"></a>
+                </li>
+
+                <li>
+                  <a href="./assets/docs/resume.pdf" download> <img src="../assets/images/cv.png">  </a>
+                </li>
+                <!-- <li>
+                  <a href="#"><i class="fa fa-rss"></i></a>
+                </li> -->
+              </ul>
+            </div>
+
+
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li><a href="../index.html">Home</a></li>
+
+              </ul>
+            </nav>
+
+            
+          </div>
+        </div>
+      </div>
+
+
+
+      <section class="section projects" data-section="Top">
+        <div class="container">
+          <div class="section-heading">
+            <h4>Invisible Bits: Hiding Secret Messages in SRAM’s Analog Domain</h4>
+          </div>
+
+          <h4 style="text-decoration: underline;">Key Highlights</h4>
+
+          <h5 style="color: rgb(186, 207, 207);">High-level problem addressed</h5>
+          <p>
+            Electronic devices are increasingly the subject of inspection by authorities. While encryption hides secret messages, it does not hide the transmission of those secret messages---in fact, it calls attention to them. 
+            This work designs a steganograph that hides information "underneath" system data. 
+
+          </p>
+          
+          <h5 style="color: rgb(186, 207, 207);">Main contribution</h5>
+          <p> This paper unveils Invisible Bits a new steganographic technique
+            that hides secret messages in the analog domain of Static Random
+            Access Memory (SRAM) embedded within a computing device. </p>
+          
+          <h5 style="color: rgb(186, 207, 207);">Results</h5>
+          <p> Experiments with commercial devices show that Invisible
+            Bits provides over 90% capacity two orders-of-magnitude more than previous on-chip steganographic approaches, while retaining device functionality even when the device undergoes subsequent
+            normal operation or is shelved for months. 
+            Experiments also show that adversaries cannot differentiate between devices with encoded messages and those without. <P>
+
+          <h5 style="color: rgb(186, 207, 207);">Significance and industrial relevance</h5>
+          <p> 
+            Invisible bits show how on-chip SRAM can carry stealthy information along with the system data. 
+            The idea can be used in the post-production watermarking of devices. 
+          </p>
+          
+          <h5 style="color: rgb(186, 207, 207);">Acquired technical skills</h5>
+          <p> Expertise in SoC subsystem power distribution, low-level firmware modification, modeling circuit behavior in SPICE, executing stress tests, and developing efficient cryptographic protocols in low-level hardware where high-level library 
+            support is rare.</p>
+        </section>
+
+
+
+
+      <section class="section Top" data-section="section_end">
+        <div class="container">
+          <div class="section-heading">
+            <!-- <h2> <div class="white-button"> <a href="./voltboot.html">Previous</a> </div></h2> <h2> <div class="white-button"> <a href="./timing_signature.html">Next</a> </div></h2> -->
+            <div class="inline-header">
+              <h2>
+                <div class="white-button">
+                  <a href="./voltboot.html">Previous</a>
+                </div>
+              </h2>
+            </div>
+          
+            <div class="inline-header">
+              <h2>
+                <div class="white-button">
+                  <a href="./timing_signature.html">Next</a>
+                </div>
+              </h2>
+            </div>
+           
+           
+            <!-- <div class="line-dec"></div> -->
+          
+          
+          </div>
+        
+
+      </section>
+
+
+
+
+
+    </div> 
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      //according to loftblog tut
+      $(".main-menu li:first").addClass("active");
+
+      var showSection = function showSection(section, isAnimate) {
+        var direction = section.replace(/#/, ""),
+          reqSection = $(".section").filter(
+            '[data-section="' + direction + '"]'
+          ),
+          reqSectionPos = reqSection.offset().top - 0;
+
+        if (isAnimate) {
+          $("body, html").animate(
+            {
+              scrollTop: reqSectionPos
+            },
+            800
+          );
+        } else {
+          $("body, html").scrollTop(reqSectionPos);
+        }
+      };
+
+      var checkSection = function checkSection() {
+        $(".section").each(function() {
+          var $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+          if (topEdge < wScroll && bottomEdge > wScroll) {
+            var currentId = $this.data("section"),
+              reqLink = $("a").filter("[href*=\\#" + currentId + "]");
+            reqLink
+              .closest("li")
+              .addClass("active")
+              .siblings()
+              .removeClass("active");
+          }
+        });
+      };
+
+      $(".main-menu").on("click", "a", function(e) {
+        e.preventDefault();
+        showSection($(this).attr("href"), true);
+      });
+
+      $(window).scroll(function() {
+        checkSection();
+      });
+    </script>
+  </body>
+</html>
